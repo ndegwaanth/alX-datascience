@@ -1,0 +1,75 @@
+sudo mysql -u root -p --port=3307
+sudo lsof -i :3306
+sudo kill -9 <PID>
+
+
+sudo systemctl status mysql
+sudo systemctl start mysql
+mysql -u desh -p
+
+sudo chown -R mysql:mysql /var/run/mysqld
+sudo chmod 755 /var/run/mysqld
+
+
+sudo systemctl restart mysql
+
+
+
+from django.conf import settings
+from django.contrib import messages
+from django.shortcuts import render, redirect
+from .forms import AdminLoginForm
+
+def adminLogin(request):
+    if request.method == "POST":
+        form = AdminLoginForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            password = form.cleaned_data['password']
+
+            # Compare form input to .env values
+            if email == settings.ADMIN_EMAIL and password == settings.ADMIN_PASSWORD:
+                messages.success(request, "Admin login successful.")
+                return redirect("admin_dashboard")
+            else:
+                messages.error(request, "Invalid admin credentials.")
+    else:
+        form = AdminLoginForm()
+    return render(request, 'admin_login.html', {'adminlogin': form})
+
+
+MYSQL SETUP IN GIT BASH
+1.DOWNLOAD ZIP FILE
+curl -L -o mysql-noadmin.zip https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.40-winx64.zip
+
+Step 2: Extract the ZIP File
+mkdir -p ~/mysql
+unzip mysql-noadmin.zip -d ~/mysql
+
+Step 3: Initialize the Data Directory
+cd ~/mysql/mysql-8.0.40-winx64
+./bin/mysqld --initialize-insecure --basedir=$(pwd) --datadir=$(pwd)/data
+
+Step 4: Start MySQL Server (User Mode)
+./bin/mysqld --console --datadir=$(pwd)/data
+
+Step 5: Connect to MySQL
+cd ~/mysql/mysql-8.0.40-winx64
+./bin/mysql -u root
+
+OPEN ANOTHER GIT BASH SHELL AND CONTINUE WITH THE REST OF THE COMMAND
+
+Step 6: Add MySQL to PATH (optional)
+If you want to use mysql from anywhere:
+echo 'export PATH=$PATH:"/c/Users/Anthony/mysql/mysql-8.0.40-winx64/bin"' >> ~/.bashrc
+source ~/.bashrc
+
+mysql -u root
+
+
+# Run MYSQL in the background
+cd ~/mysql/mysql-8.0.40-winx64/bin
+./mysqld --datadir=../data --console > mysql.log 2>&1 &
+
+mysql -u -anthony -p
+password = this comp password

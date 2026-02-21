@@ -1,0 +1,51 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "name": "Local Testing",
+            "database": "testing",
+            "username": "anthony",
+            "password": "Sucess@22",
+            "connectionTimeout": 300
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "united_nations",
+            "database": "united_nations",
+            "username": "anthony",
+            "password": "Sucess@22",
+            "connectionTimeout": 300
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "un",
+            "database": "united_nations",
+            "username": "anthony",
+            "password": "Sucess@22"
+        }
+    ]
+}
