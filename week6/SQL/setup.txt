@@ -71,5 +71,5 @@ mysql -u root
 cd ~/mysql/mysql-8.0.40-winx64/bin
 ./mysqld --datadir=../data --console > mysql.log 2>&1 &
 
-mysql -u -anthony -p
+mysql -u anthony -p
 password = this comp password

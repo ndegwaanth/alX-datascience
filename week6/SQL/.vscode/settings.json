@@ -46,6 +46,36 @@
             "database": "united_nations",
             "username": "anthony",
             "password": "Sucess@22"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mcq",
+            "database": "united_nations",
+            "username": "anthony",
+            "password": "Sucess@22"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "global",
+            "database": "united_nations",
+            "username": "anthony",
+            "password": "Sucess@22"
         }
     ]
 }

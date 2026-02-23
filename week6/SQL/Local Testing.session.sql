@@ -37,6 +37,3 @@ INSERT INTO user_signup (first_name, last_name, residence, phone_number, email, 
 ('Mary', 'Johnson', 'Kisumu', '0734567890', 'mary.johnson@example.com', 'marypassword123');
 
 SELECT * FROM user_signup;
-
-
-
