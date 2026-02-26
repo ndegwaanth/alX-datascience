@@ -1,0 +1,3 @@
+pymsql
+Ipython-sql
+prettytable==3.9.0

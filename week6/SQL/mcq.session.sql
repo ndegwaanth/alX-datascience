@@ -59,7 +59,7 @@ CREATE TABLE employee_backup LIKE employee;
 INSERT INTO employee_backup
 SELECT * FROM employee;
 
-selecr * from employee
+select * from employee
 where employee_name = 'Bello Azibo';
 
 /*
@@ -69,7 +69,10 @@ UPDATE employee_backup
 SET phone_number = '+99643864786'
 WHERE employee_name = 'Bello Azibo';
 
+select * from employee_backup
+where employee_name = 'Bello Azibo';
 
+describe employee_backup;
 
 -- GLOBAL WATER ACCESS
 SELECT * FROM global_water_access;
@@ -121,3 +124,11 @@ SELECT COUNT(*) FROM well_pollution;
 SELECT COUNT(*)
 FROM well_pollution
 WHERE (description LIKE 'Clean_%' OR results = 'Clean') AND biological < 0.01;
+
+
+-- 2. How many rows of data are returned for the following query?
+SELECT COUNT(*) 
+FROM well_pollution
+WHERE description
+IN ('Parasite: Cryptosporidium', 'biologically contaminated')
+OR (results = 'Clean' AND biological > 0.01);

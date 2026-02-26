@@ -14,30 +14,6 @@ sudo chmod 755 /var/run/mysqld
 sudo systemctl restart mysql
 
 
-
-from django.conf import settings
-from django.contrib import messages
-from django.shortcuts import render, redirect
-from .forms import AdminLoginForm
-
-def adminLogin(request):
-    if request.method == "POST":
-        form = AdminLoginForm(request.POST)
-        if form.is_valid():
-            email = form.cleaned_data['email']
-            password = form.cleaned_data['password']
-
-            # Compare form input to .env values
-            if email == settings.ADMIN_EMAIL and password == settings.ADMIN_PASSWORD:
-                messages.success(request, "Admin login successful.")
-                return redirect("admin_dashboard")
-            else:
-                messages.error(request, "Invalid admin credentials.")
-    else:
-        form = AdminLoginForm()
-    return render(request, 'admin_login.html', {'adminlogin': form})
-
-
 MYSQL SETUP IN GIT BASH
 1.DOWNLOAD ZIP FILE
 curl -L -o mysql-noadmin.zip https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.40-winx64.zip
