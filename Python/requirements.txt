@@ -1,0 +1,29 @@
+# ---- Core Data Manipulation & Math ----
+numpy
+pandas
+scipy
+
+# ---- Data Visualization ----
+matplotlib
+seaborn
+plotly
+
+# ---- Machine Learning & Classical AI ----
+scikit-learn
+statsmodels
+xgboost
+lightgbm
+
+
+# ---- Natural Language Processing (NLP) ----
+nltk
+spacy
+
+# ---- Notebook & Environment Utilities ----
+ipython
+jupyter
+notebook
+tqdm
+
+ipykernel
+openpyxl
