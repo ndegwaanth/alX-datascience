@@ -30,7 +30,7 @@ config_params = {
         LEFT JOIN soil_and_crop_features USING (Field_ID)
         LEFT JOIN farm_management_features USING (Field_ID)
     """,
-    "db_path": "sqlite:///Weather_data-a-4280/Maji_Ndogo_farm_survey_small.db",
+    "db_path": "sqlite:///Maji_Ndogo_farm_survey_small.db",
 
     "columns_to_rename": {
         "Annual_yield": "Crop_type",
@@ -50,11 +50,11 @@ config_params = {
     "regex_patterns": patterns
 }
 
-field_processor = FieldDataProcessor(config_params, "INFO")
+field_processor = FieldDataProcessor(config_params=config_params, logging_level="INFO")
 field_processor.process()
 field_df = field_processor.df
 
-weather_processor = WeatherDataProcessor(config_params)
+weather_processor = WeatherDataProcessor(config_params=config_params, logging_level="INFO")
 weather_processor.process()
 weather_df = weather_processor.weather_df
 

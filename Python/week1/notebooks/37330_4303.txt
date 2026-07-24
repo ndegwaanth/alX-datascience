@@ -1,0 +1,30 @@
+24-06-26_14:34:16
+=========================================
+============ AUTOGRADING ================
+=========================================
+Examining contents of 37330_4303.zip
+One jupyter notebook found
+-----------------------------------------
+Unzipping 37330_4303.zip to /home/autograder/unzipped
+Archive:  /home/autograder/temp/37330_4303.zip
+  inflating: /home/autograder/unzipped/37330_4303/submission_Integrated_project_P3_Validating_our_data_student.ipynb  
+  inflating: /home/autograder/unzipped/37330_4303/Integrated_project_P3_Validating_our_data_test_suite.py  
+  inflating: /home/autograder/unzipped/37330_4303/preamble.py  
+caution: excluded filename not matched:  __MACOSX/*
+Unzipped successfully
+-----------------------------------------
+Processing notebook
+Notebook processed successfully
+-----------------------------------------
+Checking submission for syntax errors
+Check complete
+-----------------------------------------
+Grading student code
+Something went wrong:
+  Test execution was interrupted. Submission may contain syntax error(s)
+An error occurred during grading.
+
+Saving result (0) to 37330_4303.csv
+=========================================
+AUTOGRADING COMPLETED WITH EXIT STATUS: 1
+=========================================
