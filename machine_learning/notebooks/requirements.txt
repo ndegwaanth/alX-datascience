@@ -5,16 +5,16 @@ scipy
 
 # Machine Learning
 scikit-learn
-xgboost
-lightgbm
-catboost
+# xgboost
+# lightgbm
+# catboost
 imbalanced-learn
 
 # Deep Learning
-tensorflow
-torch
-torchvision
-torchaudio
+# tensorflow
+# torch
+# torchvision
+# torchaudio
 
 # Statistics
 statsmodels
@@ -53,7 +53,7 @@ joblib
 cloudpickle
 
 # Progress Bars
-tqdm
+# tqdm
 
 # Configuration
 python-dotenv
@@ -82,63 +82,63 @@ selenium
 lxml
 
 # Image Processing
-opencv-python
-pillow
-scikit-image
+# opencv-python
+# pillow
+# scikit-image
 
-# NLP
-nltk
-spacy
-transformers
-sentence-transformers
-gensim
-textblob
+# # NLP
+# nltk
+# spacy
+# transformers
+# sentence-transformers
+# gensim
+# textblob
 
-# Time Series
-prophet
-sktime
-pmdarima
+# # Time Series
+# prophet
+# sktime
+# pmdarima
 
-# Experiment Tracking
-mlflow
-wandb
+# # Experiment Tracking
+# mlflow
+# wandb
 
-# Model Serving
-onnx
-onnxruntime
+# # Model Serving
+# onnx
+# onnxruntime
 
-# Distributed Computing
-dask
-ray
+# # Distributed Computing
+# dask
+# ray
 
-# Utilities
-rich
-click
+# # Utilities
+# rich
+# click
 
-# Testing
-pytest
-pytest-cov
+# # Testing
+# pytest
+# pytest-cov
 
-# Code Quality
-black
-isort
-flake8
-mypy
+# # Code Quality
+# black
+# isort
+# flake8
+# mypy
 
-# Documentation
-mkdocs
-mkdocs-material
+# # Documentation
+# mkdocs
+# mkdocs-material
 
 # Excel Support
 openpyxl
 xlsxwriter
 
 # File Formats
-pyarrow
-fastparquet
-h5py
+# pyarrow
+# fastparquet
+# h5py
 
 # Cloud Storage
-boto3
-google-cloud-storage
-azure-storage-blob
+# boto3
+# google-cloud-storage
+# azure-storage-blob
