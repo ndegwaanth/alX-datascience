@@ -1,7 +1,7 @@
 # Core Data Processing
-numpy
+numpy==1.26.4
 pandas
-scipy
+scipy==1.13.1
 
 # Machine Learning
 scikit-learn
@@ -21,7 +21,7 @@ statsmodels
 
 # Visualization
 matplotlib
-plotly
+plotly==4.14.3
 bokeh
 altair
 ipympl
